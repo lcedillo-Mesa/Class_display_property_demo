@@ -1,0 +1,151 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── BROKEN VERSION ───────────────────────────── */
+
+    /* nav links stacked — forced block */
+    .nav a {
+      display: block;
+    }
+
+
+
+    /* cards stacked — default block behavior */
+    .card {
+      display: block;
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      margin-bottom: 8px;
+    }
+
+
+
+
+
+
+
+
+
+    
+    /* image gap — inline default */
+    .card img {
+      display: inline;
+      width: 100%;
+    }
+
+    /* no padding on card content */
+    .card-body {
+      padding: 0;
+    }
+
+
+    /* ── STEP 1 FIX: nav links ─────────────────────
+       Change .nav a display to inline-block
+       Add padding and margin-right
+    ────────────────────────────────────────────────── */
+
+    /* .nav a {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-right: 4px;
+    } */
+
+
+    /* ── STEP 2 FIX: cards ─────────────────────────
+       Change .card display to inline-block
+       Set a width and add padding
+       Add vertical-align: top so cards align at the top
+    ────────────────────────────────────────────────── */
+
+    /* .card {
+      display: inline-block;
+      width: 28%;
+      padding: 8px;
+      margin-right: 12px;
+      vertical-align: top;
+    } */
+
+
+    /* ── STEP 3 FIX: image gap ─────────────────────
+       Change img display to block
+       Ask students: why does this fix the gap?
+    ────────────────────────────────────────────────── */
+
+    /* .card img {
+      display: block;
+      width: 100%;
+    } */
+
+
+    /* ── STEP 4 FIX: card padding ──────────────────
+       Add padding inside the card body
+       Connects back to box model week 1
+    ────────────────────────────────────────────────── */
+
+    /* .card-body {
+      padding: 8px 0 0;
+    } */
+
+
+    /* ── SHARED STYLES ────────────────────────────── */
+    .nav {
+      background: #2E4057;
+      padding: 12px 16px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #E6F1FB;
+      padding: 24px 16px 16px;
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      color: #2E4057;
+      margin: 0 0 8px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .cards-section {
+      padding: 16px;
+    }
+
+    .cards-section h2 {
+      font-size: 16px;
+      color: #2E4057;
+      margin: 0 0 12px;
+    }
+
+    .card-body h3 {
+      font-size: 14px;
+      color: #2E4057;
+      margin: 0 0 4px;
+    }
+
+    .card-body p {
+      font-size: 12px;
+      color: #777;
+      margin: 0;
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      font-size: 12px;
+      padding: 10px 16px;
+      margin-top: 16px;
+    }
